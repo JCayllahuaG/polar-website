@@ -1,11 +1,48 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import NavBar from '../components/NavBar.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<header><NavBar/></header>
+	<div class="grid grid-cols-4 grid-rows-2 gap-2 py-12 px-4">
+		<div class="square bg-slate-50 flex flex-col py-5 px-8 space-y-5">
+			<h1 class="text-5xl font-bold">
+				Ve más allá con nosotros
+			</h1>
+			<p>
+				Renueva tu estilo con Polar Reach: donde la moda se une a la aventura. Viste para cada viaje, explora lo desconocido y usa el hashtag <b class="font-semibold">#PolarReach</b> para ser parte de nuestra comunidad destacada.
+			</p>
+			<span class="animation-elevate">
+				<a target="_blank" href="" class="underline font-semibold">Síguenos en Instagram y únete a la aventura.</a>
+			</span>
+		</div>
+		<div class="square">
+			<img class="object-cover w-full h-full" src="../../src/assets/images/aurora-escarlata.jpg" alt="Modelo aurora escarlata"/>
+		</div>
+		<div class="square">
+			<img class="object-cover w-full h-full" src="../../src/assets/images/cedro-artico.jpg" alt="Modelo Cedro artico"/>
+		</div>
+		<div class="square">
+			<img class="object-cover w-full h-full" src="../../src/assets/images/petalos-nieve.jpg" alt="Modelo pétalos de nieve"/>
+		</div>
+		<div class="square">
+			<img class="object-cover w-full h-full" src="../../src/assets/images/flor-ambar.jpg" alt="Modelo flor ámbar"/>
+		</div>
+		<div class="square">
+			<img class="object-cover w-full h-full" src="../../src/assets/images/mar-profundo.jpg" alt="Modelo mar profundo"/>
+		</div>
+	</div>
+	<footer>Footer</footer>
 </Layout>
+<style scoped>
+	div{
+		@apply rounded-sm;
+	}
+	.animation-elevate{
+		@apply hover:-translate-y-0.5 transition-transform duration-100 ease-linear;
+	}
+	.square{
+		aspect-ratio: 1 / 1;
+	}
+</style>

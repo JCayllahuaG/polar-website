@@ -1,0 +1,40 @@
+---
+import CartIcon from "./icons/CartIcon.astro";
+import ProfileIcon from "./icons/ProfileIcon.astro";
+import Logo from "./icons/Logo.astro";
+
+let cartCount = 0;
+---
+
+<nav class="flex justify-between py-5 px-12 items-center">
+    <div id="logo" class="flex items-center space-x-2">
+        <Logo class="w-10 h-10 " />
+        <span class="font-semibold text-xl">Polar Reach™</span>
+    </div>
+    <ul class="flex space-x-4 font-semibold text-[#222222] text-lg">
+        <li class="nav-item"><a href="/about">Comprar</a></li>
+        <li class="nav-item"><a href="/blog">Colecciones </a></li>
+        <li class="nav-item"><a href="/contact">Explorar</a></li>
+        <li class="nav-item"><a href="/more">···</a></li>
+    </ul>
+    <div class="flex space-x-10">
+        <button class="button-animation flex items-center space-x-2 font-semibold text-lg rounded-xl p-2">
+            <CartIcon/>
+            <span>Carro</span>
+            <span>{cartCount}</span>
+        </button>
+        <button class="button-animation flex items-center space-x-2 font-semibold text-lg p-0 m-0 rounded-2xl">
+            <ProfileIcon/>
+            <span>Mi Cuenta</span>
+        </button>
+    </div>
+</nav>
+
+<style scoped>
+    .nav-item{
+        @apply hover:scale-105 transition-all duration-100 ease-linear;
+    }
+    .button-animation{
+        @apply hover:bg-[#dad8d8] transition-colors duration-100 ease-linear;
+    }
+</style>

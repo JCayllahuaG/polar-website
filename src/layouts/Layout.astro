@@ -1,16 +1,49 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Polar Reach</title>
+		<meta name="description" content="Polar Reach: Para aquellos que prosperan con estilo. Explora nuestros polos 100% algodón y más." />
+		<meta name="keywords" content="Polar Reach, ropa, camisetas,polos,lentes, 100% algodón, moda, estilo, elegancia" />
+		<meta name="author" content="Polar Reach" />
+		<meta property="og:title" content="Polar Reach" />
+		<meta property="og:description" content="Polar Reach: Para aquellos que prosperan con estilo. Explora nuestros polos 100% algodón y más." />
+		<meta property="og:image" content="../assets/brand_image_medias.png" />
+		<meta property="og:url" content="https://polar-reach.store" />
+		<meta property="og:type" content="website" />
+		<script type="application/ld+json">
+		{`
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Polar Reach",
+			"url": "https://polar-reach.store",
+			"logo": "/path/to/your/logo.png",
+			"sameAs": [
+				"https://www.instagram.com/polar.reach",
+				"https://www.facebook.com/yourprofile",
+				"https://wa.me/+51974384231"
+			],
+			"description": "Polar Reach: Elegancia forjada en el frío. Para aquellos que prosperan con estilo, sin importar el frío. Explora nuestros polos y más.",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"contactType": "Customer Service",
+				"email": "polar.reach@outlook.com"
+			}
+		}
+		`}
+		</script>
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
+
+
 
 <style>
 	html,
@@ -18,5 +51,7 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		background-color: #e7e5e5;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	}
 </style>
