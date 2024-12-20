@@ -5,15 +5,15 @@ import NavBar from '../components/NavBar.astro';
 
 <Layout>
 	<header><NavBar/></header>
-	<div class="grid grid-cols-4 grid-rows-2 gap-2 py-12 px-4">
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4 sm:p-6 lg:p-12">
 		<div class="square bg-slate-50 flex flex-col py-5 px-8 space-y-5">
-			<h1 class="text-5xl font-bold">
+			<h1 class="text-3xl lg:text-4xl font-bold">
 				Ve más allá con nosotros
 			</h1>
-			<p>
+			<p class="max-sm:text-xl">
 				Renueva tu estilo con Polar Reach: donde la moda se une a la aventura. Viste para cada viaje, explora lo desconocido y usa el hashtag <b class="font-semibold">#PolarReach</b> para ser parte de nuestra comunidad destacada.
 			</p>
-			<span class="animation-elevate">
+			<span class="animation-elevate max-sm:text-xl">
 				<a target="_blank" href="" class="underline font-semibold">Síguenos en Instagram y únete a la aventura.</a>
 			</span>
 		</div>
@@ -33,7 +33,7 @@ import NavBar from '../components/NavBar.astro';
 			<img class="object-cover w-full h-full" src="images/mar-profundo.jpg" alt="Modelo mar profundo"/>
 		</div>
 	</div>
-	<footer>Footer</footer>
+
 </Layout>
 <style scoped>
 	div{
